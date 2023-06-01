@@ -1,15 +1,23 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>main list</title>
+    <link type="text/css" href="{% static 'hookah/css/styles.css' %}" rel="stylesheet" />
 </head>
 <body>
-    <ul>
-        <li>Главная</li>
-        <li>Преимущества</li>
-        <li>Галерея</li>
-        <li>Местоположение</li>
+{#-----------------Меню выбора-----------------------#}
+    <ul class="leftpanel">
+        <li class="leftpanelmenu">Местоположение</li>
+        <li class="leftpanelmenu">Галерея</li>
+        <li class="leftpanelmenu">Преимущества</li>
+        <li class="leftpanelmenu">Главная</li>
     </ul>
+
+ {#-----------------Блок контента-----------------------#}
+ {% block content %}
+ {% endblock %}
+
 </body>
 </html>

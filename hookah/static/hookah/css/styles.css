@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'abc';
+  src: local('Abc'),
+       url('../fonts/beer money.ttf') format("truetype");
+}
+
+.leftpanel {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: content-box;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vh;
+    height: 60px;
+    z-index: 990;
+    list-style-type: none;
+    text-align: center;
+    transform: rotate(-90deg) translateY(100%);
+    transform-origin: left bottom;
+    transition: transform 0.3s ease-in-out,-webkit-transform 0.3s ease-in-out;
+    display: table;
+    table-layout: fixed;
+    margin: 0;
+    padding: 0;
+    background-color: #7DE2D1;
+}
+
+.leftpanelmenu{
+    -webkit-font-smoothing: antialiased;
+    list-style-type: none;
+    box-sizing: content-box;
+    font-family: 'Firacode',abc,sans-serif;
+    font-size: 16px;
+    position: relative;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    outline: none;
+    color: #1A1423;
+    font-weight: 400;
+}
+
+.mainsheet{
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    min-height: 670px;
+    height: 100vh;
+    background-color: #000000;
+}
+
+body{
+    background: url("../images/img1.png") 100% 100% no-repeat fixed;
+    background-size:100%;
+}
