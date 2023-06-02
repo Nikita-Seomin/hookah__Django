@@ -8,11 +8,11 @@
 </head>
 <body>
 {#-----------------Меню выбора-----------------------#}
-    <ul class="leftpanel">
-        <li class="leftpanelmenu">Местоположение</li>
-        <li class="leftpanelmenu">Галерея</li>
-        <li class="leftpanelmenu">Преимущества</li>
-        <li class="leftpanelmenu">Главная</li>
+    <ul class="leftPanel">
+        <li class="leftPanelMenu"><a class="menulinks" href="{% url 'position'  %}">Местоположение</a></li>
+        <li class="leftPanelMenu"><a class="menulinks" href="{% url 'galary'  %}">Галерея</a></li>
+        <li class="leftPanelMenu"><a class="menulinks" href="{% url 'advantages'  %}">Преимущества</a></li>
+        <li class="leftPanelMenu"><a class="menulinks" href="{% url 'main'  %}">Главная</a></li>
     </ul>
 
  {#-----------------Блок контента-----------------------#}

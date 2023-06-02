@@ -4,7 +4,7 @@
        url('../fonts/beer money.ttf') format("truetype");
 }
 
-.leftpanel {
+.leftPanel {
     -webkit-font-smoothing: antialiased;
     box-sizing: content-box;
     position: fixed;
@@ -25,12 +25,12 @@
     background-color: #7DE2D1;
 }
 
-.leftpanelmenu{
+.leftPanelMenu{
     -webkit-font-smoothing: antialiased;
     list-style-type: none;
     box-sizing: content-box;
     font-family: 'Firacode',abc,sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     position: relative;
     display: table-cell;
     text-align: center;
@@ -43,6 +43,51 @@
     color: #1A1423;
     font-weight: 400;
 }
+
+.menulinks {
+  color: black; /* blue colors for links too */
+  text-decoration: none;
+}
+
+.mainTitleBlock{
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: absolute;
+    box-sizing: border-box;
+    display: table;
+    visibility: visible;
+    color: #ffffff;
+    z-index: 19;
+    top: 293px;
+    left: 20%;
+    width: 640px;
+}
+
+.mainTitle{
+    -webkit-font-smoothing: antialiased;
+    visibility: visible;
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    -webkit-text-size-adjust: 100%;
+    color: #FFE66D;
+    font-size: 69px;
+    font-family: 'Acrobat',Arial,sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    line-height: 69px;
+}
+
 
 .mainsheet{
     -webkit-font-smoothing: antialiased;
@@ -57,6 +102,50 @@
     min-height: 670px;
     height: 100vh;
     background-color: #000000;
+}
+
+.mainScheduleBlock{
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: absolute;
+    box-sizing: border-box;
+    display: table;
+    visibility: visible;
+    transition-property: opacity, transform;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    backface-visibility: hidden;
+    opacity: 1;
+    transform: none !important;
+    color: #ffffff;
+    z-index: 10;
+    top: 60%;
+    left: 212.5px;
+    width: 320px;
+    transition-duration: 1s;
+}
+
+.mainScheduleTitle{
+    -webkit-font-smoothing: antialiased;
+    visibility: visible;
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    -webkit-text-size-adjust: 100%;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'MONT',Arial,sans-serif;
+    font-weight: 400;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    line-height: 27px;
 }
 
 body{

@@ -21,5 +21,9 @@ from hookah.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('main/', index)
+    path('main/', index, name='main'),
+    path('advantages/', advantages, name='advantages'),
+    path('galary/', galary, name='galary'),
+    path('position/', position, name='position'),
+
 ]

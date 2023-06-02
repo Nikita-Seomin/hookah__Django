@@ -3,6 +3,17 @@ from django.db import models
 
 # Create your models here.
 
+class Schedule(models.Model):
+    day = models.CharField(max_length=255, verbose_name="День")
+    time_create = models.DateTimeField(auto_now_add=True, verbose_name="Время создания")
+    time_update = models.DateTimeField(auto_now=True, verbose_name="Время изменения")
+    time_open = models.TimeField(auto_now=False, auto_now_add=False, blank=True, verbose_name="Время открытия")
+    time_close = models.TimeField(auto_now=False, auto_now_add=False, blank=True, verbose_name="Время закрытия")
+    is_open = models.BooleanField(default=True, verbose_name="Открыто или нет")
+
+    def __str__(self):
+        return self.day
+
 
 class Users(models.Model):
     name = models.CharField(max_length=255, verbose_name="ФИО")
